@@ -1,19 +1,29 @@
 # FraudGuard ReadME
+
 ---
+
 ## Title: FraudGuard: Unmasking Transactional Deception
+
 ---
+
 ![FraudGuard Diagram](https://github.com/J4smith0601/FraudGuard-Unmasking-Transactional-Deception/blob/main/FraudGuard_banner_image.jpg)
+
 ---
+
 **Introduction:**
 
 In the rapidly evolving landscape of digital finance, the detection and prevention of fraudulent transactions have become critical challenges for institutions worldwide. As financial systems grow more complex, so too do the methods employed by fraudsters, necessitating innovative approaches to safeguard assets and maintain trust. This project, titled **FraudGuard: Unmasking Transactional Deception**, seeks to address these challenges by leveraging the IEEE-CIS Fraud Detection dataset to enhance the identification and prevention of fraudulent activities within transaction data.
+
 ---
+
 **Project Aims:**
 
 The IEEE-CIS Fraud Detection dataset pertains to online payment fraud, with a specific emphasis on credit card transactions. Developed in collaboration between IEEE and the Consumer Internet Services (CIS) industry, the dataset is designed to identify fraudulent activities within online payment systems. The dataset primarily addresses Card-Not-Present (CNP) fraud, a form of fraud that occurs when transactions are executed without the physical presentation of the card, typically in online or telephonic payment scenarios.
 
 The core objective of this project is to uncover the underlying patterns and factors that contribute to fraudulent transactions. By analysing the dataset, we aim to develop predictive models capable of estimating the likelihood of fraud in real-time, thus providing a robust tool for financial institutions to pre-empt and counteract fraudulent behaviours. Additionally, this project will explore temporal trends and patterns within the data, offering insights into how fraudulent activities evolve over time and how they differ from legitimate transactions.
+
 ---
+
 **Models Developed:**
 
 In this project, four distinct models were developed and evaluated for their ability to detect fraudulent transactions:
@@ -21,7 +31,9 @@ In this project, four distinct models were developed and evaluated for their abi
 - **Boosted Logistic Regression**
 - **A Stacked Model**: Combining K-Nearest Neighbors, Decision Tree, and Logistic Regression with XGBoost as the meta-classifier
 - **Feedforward Neural Network (FNN)**
+
 ---
+
 ## Technologies Used
 
 This project employs a range of technologies and libraries for data analysis, visualisation, and machine learning:
@@ -73,14 +85,16 @@ This project employs a range of technologies and libraries for data analysis, vi
 - **VS Code**: The IDE used for coding and managing the project.
 - **Git**: For version control and tracking changes.
 - **GitHub**: Hosts the repository and supports collaboration.
+
 ---
+
 ## Installation Instructions
 
 To run this project locally, follow these steps:
 
 **1. Clone the Repository:**
 Open a terminal or command prompt and run the following command to clone the repository:
-```bash
+
 git clone https://github.com/J4smith0601/FraudGuard-Unmasking-Transactional-Deception.git
 
 2. Navigate to the Project Directory:
@@ -99,6 +113,7 @@ pip install numpy pandas matplotlib seaborn plotly sweetviz dataprep scipy sciki
 
 5. Verify Installation:
 To verify that the dependencies are correctly installed, you can run a Python script or open a Jupyter Notebook and import the libraries to ensure they are available.
+
 ---
 
 ## Results and Analysis
@@ -121,6 +136,8 @@ The project evaluated four distinct models for detecting fraudulent transactions
   - **Performance**: Achieved a test accuracy of 96.31%, with high precision at 89.62% and lower recall of 60.67%, resulting in an F1 score of 0.7236. The AUC-ROC and AUC-PR were 0.9440 and 0.8047, respectively.
   - **Strengths**: Effective at capturing complex patterns and non-linear relationships, though it showed signs of overfitting, indicating potential issues with generalization.
 
+---
+
 ### Comparison and Best Model Selection
 
 - **Complexity vs. Interpretability**: Boosted Decision Stumps and Logistic Regression models are more interpretable but less capable of capturing complex patterns compared to the Stacked Model and FNN.
@@ -132,3 +149,42 @@ The project evaluated four distinct models for detecting fraudulent transactions
 
 The Stacked Model emerges as the best choice due to its strong balance between precision, recall, and overall predictive power. It is well-suited for real-time fraud detection and provides valuable insights into fraudulent patterns. The model's ability to generalize across various patterns and handle imbalanced datasets aligns perfectly with the project's objective of providing a reliable tool for financial institutions to pre-empt and counteract fraudulent behaviours.
 
+**Conclusion**:
+
+The project underscores the efficacy of machine learning in detecting and preventing fraudulent transactions within financial systems. While the Stacked Model demonstrated superior generalization and classification effectiveness, it is essential to await the final competition results for a comprehensive evaluation. Despite its promising performance, continued refinement and validation are necessary to enhance the robustness and applicability of the model in real-world scenarios.
+
+---
+
+**License**
+
+This project is not licensed under any specific license. You are free to use, modify, and distribute this project as you see fit. However, please note that this project is intended for personal use and portfolio showcasing purposes. If you share or distribute this project, please ensure that any derivative works or modifications adhere to the same principles of personal use and respect for the original work.
+
+---
+
+**Acknowledgements**
+
+- The dataset used in this project was sourced from the IEEE-CIS Fraud Detection dataset. This resource provided critical data for developing and evaluating the machine learning models in this project. Appreciation is extended to the contributors of the dataset for their valuable work.
+- Special thanks to Laks Balasubramanian and the Data Science & AI course team at the Institute of Data and Auckland University of Technology for their guidance and support throughout this project.
+- Acknowledgment is given to the Python libraries used, including NumPy, Pandas, Matplotlib, Seaborn, Plotly, Sweetviz, Dataprep, SciPy, Scikit-learn, XGBoost, and TensorFlow, which were essential for data manipulation, analysis, and visualization.
+- No external funding or grants were received for this project.
+
+---
+
+**Data Source**
+
+The original dataset used in this project was obtained from the IEEE-CIS Fraud Detection dataset. This extensive resource provided comprehensive transaction data, which served as the foundation for the machine learning models developed in this project.
+
+For more information about the data, including its structure and additional details, you can visit the Kaggle page for the IEEE-CIS Fraud Detection dataset.
+
+--- 
+
+**Contact Information**
+
+For feedback, networking, or inquiries related to this project, please feel free to reach out:
+
+- LinkedIn: James Smith
+- Email: James.smith@andersmith.co.nz
+
+You can connect with me via LinkedIn or email to discuss the project, explore collaboration opportunities, or provide feedback.
+
+---
